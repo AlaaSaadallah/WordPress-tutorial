@@ -15614,7 +15614,7 @@ body {
 }
 #wrapper-navbar #main-nav ul {
   flex: 1;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 #wrapper-navbar #main-nav ul li a {
   font-weight: 500;
