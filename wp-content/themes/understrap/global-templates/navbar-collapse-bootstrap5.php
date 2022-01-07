@@ -10,7 +10,9 @@ defined( 'ABSPATH' ) || exit;
 
 $container = get_theme_mod( 'understrap_container_type' );
 ?>
-
+<div class="top-header-holder">
+	
+</div>
 <nav id="main-nav" class="navbar navbar-expand-md" aria-labelledby="main-nav-label">
 
 	<h2 id="main-nav-label" class="screen-reader-text">

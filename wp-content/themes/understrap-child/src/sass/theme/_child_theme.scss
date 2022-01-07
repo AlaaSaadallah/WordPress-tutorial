@@ -1,4 +1,40 @@
-.home-banner{
+$primary: #223a47;
+$secondary: #f27257;
+
+body {
+    // font-family: "Fredericka the Great", cursive;
+    font-family: "Source Sans Pro", sans-serif;
+    font-size: 18px;
+    line-height: 1.25;
+}
+
+#wrapper-navbar {
+    .top-header-holder {
+        height: 260px;
+        background-color: #f1f1f1;
+    }
+    #main-nav {
+        border-top: 1px solid rgba(#5da0aa, 0.5);
+        border-bottom: 1px solid rgba(#5da0aa, 0.5);
+        ul {
+            flex: 1;
+            justify-content: space-around;
+            li {
+                a {
+                    font-weight: 500;
+                    font-size: 22px;
+                    text-transform: uppercase;
+                }
+                &.current_page_item {
+                    a {
+                        color: $secondary;
+                    }
+                }
+            }
+        }
+    }
+}
+.home-banner {
     height: 1080px;
     background-color: #ccc;
     background-image: url(../img/home-banner.jpeg);
