@@ -16,6 +16,7 @@ body {
     #main-nav {
         border-top: 1px solid rgba(#5da0aa, 0.5);
         border-bottom: 1px solid rgba(#5da0aa, 0.5);
+        padding: 0px;
         ul {
             flex: 1;
             justify-content: space-between;
@@ -24,6 +25,7 @@ body {
                     font-weight: 500;
                     font-size: 22px;
                     text-transform: uppercase;
+                    padding: 0.5em 1em;
                 }
                 &.current_page_item {
                     a {

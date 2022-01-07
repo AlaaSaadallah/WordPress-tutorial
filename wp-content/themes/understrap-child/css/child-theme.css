@@ -15611,6 +15611,7 @@ body {
 #wrapper-navbar #main-nav {
   border-top: 1px solid rgba(93, 160, 170, 0.5);
   border-bottom: 1px solid rgba(93, 160, 170, 0.5);
+  padding: 0px;
 }
 #wrapper-navbar #main-nav ul {
   flex: 1;
@@ -15620,6 +15621,7 @@ body {
   font-weight: 500;
   font-size: 22px;
   text-transform: uppercase;
+  padding: 0.5em 1em;
 }
 #wrapper-navbar #main-nav ul li.current_page_item a {
   color: #f27257;
