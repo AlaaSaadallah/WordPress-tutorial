@@ -15604,9 +15604,264 @@ body {
   line-height: 1.25;
 }
 
+.mobile-logo-holder {
+  text-align: center;
+  display: none;
+}
+@media (max-width: 768px) {
+  .mobile-logo-holder {
+    display: block;
+  }
+}
+.mobile-logo-holder img {
+  width: 66%;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+@media (max-width: 576px) {
+  .mobile-logo-holder img {
+    width: 85%;
+  }
+}
+
+.reservation-btn {
+  font-family: "Fredericka the Great";
+  font-size: 38px;
+  border: 1px dotted #f27257;
+  display: inline-block;
+  padding: 0.25em 0.5em;
+  border-radius: 0.25em;
+  transition: 0.25s ease all;
+  cursor: pointer;
+  text-decoration: none;
+}
+.reservation-btn:hover {
+  background: #f27257;
+  color: white;
+}
+@media (max-width: 992px) {
+  .reservation-btn {
+    font-size: 18px;
+  }
+}
+@media (max-width: 768px) {
+  .reservation-btn {
+    display: none;
+  }
+  .reservation-btn.mobile {
+    display: block;
+    margin-top: 15px;
+  }
+}
+
+#wrapper-navbar {
+  margin-bottom: -360px;
+}
+@media (max-width: 992px) {
+  #wrapper-navbar {
+    margin-bottom: 0px;
+  }
+}
 #wrapper-navbar .top-header-holder {
   height: 260px;
-  background-color: #f1f1f1;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+@media (max-width: 992px) {
+  #wrapper-navbar .top-header-holder {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    height: auto;
+  }
+}
+@media (max-width: 768px) {
+  #wrapper-navbar .top-header-holder {
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+}
+#wrapper-navbar .top-header-holder .navbar-toggler {
+  padding: 0em 1em;
+  padding-top: 1em;
+  display: none;
+}
+@media (max-width: 992px) {
+  #wrapper-navbar .top-header-holder .navbar-toggler {
+    display: block;
+  }
+}
+#wrapper-navbar .top-header-holder .navbar-toggler:hover {
+  background: rgba(93, 160, 170, 0.25);
+}
+#wrapper-navbar .top-header-holder .navbar-toggler .bar {
+  height: 4px;
+  border-radius: 4px;
+  background: rgba(93, 160, 170, 0.5);
+  margin-bottom: 4px;
+  width: 2em;
+}
+#wrapper-navbar .top-header-holder .navbar-toggler .menu-title {
+  font-size: 14px;
+  margin-top: 2.5em;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+#wrapper-navbar .top-header-holder .navbar-toggler.md-view {
+  display: none;
+}
+@media (max-width: 768px) {
+  #wrapper-navbar .top-header-holder .navbar-toggler {
+    display: none;
+  }
+  #wrapper-navbar .top-header-holder .navbar-toggler.md-view {
+    display: flex;
+    padding: 0.5em;
+    align-items: center;
+    margin: -0.5em;
+  }
+  #wrapper-navbar .top-header-holder .navbar-toggler.md-view .bar {
+    height: 3px;
+    border-radius: 3px;
+    background: rgba(93, 160, 170, 0.5);
+    margin-bottom: 3px;
+    width: 1em;
+  }
+  #wrapper-navbar .top-header-holder .navbar-toggler.md-view .menu-title {
+    margin-top: 0;
+    margin-right: 0.5em;
+    font-size: 18px;
+  }
+}
+#wrapper-navbar .top-header-holder .container .logo-holder {
+  display: block;
+}
+#wrapper-navbar .top-header-holder .container .logo-holder img {
+  width: 275px;
+}
+@media (max-width: 992px) {
+  #wrapper-navbar .top-header-holder .container .logo-holder img {
+    width: 200px;
+  }
+}
+@media (max-width: 768px) {
+  #wrapper-navbar .top-header-holder .container .logo-holder img {
+    display: none;
+  }
+}
+@media (max-width: 992px) {
+  #wrapper-navbar .top-header-holder .container .col-6 {
+    text-align: center;
+  }
+}
+#wrapper-navbar .top-header-holder .container .social-media-holder,
+#wrapper-navbar .top-header-holder .container .social-media-holder-tablet {
+  font-size: 50px;
+}
+#wrapper-navbar .top-header-holder .container .social-media-holder a,
+#wrapper-navbar .top-header-holder .container .social-media-holder-tablet a {
+  color: #f27257;
+  text-decoration: none;
+}
+#wrapper-navbar .top-header-holder .container .social-media-holder a:hover,
+#wrapper-navbar .top-header-holder .container .social-media-holder-tablet a:hover {
+  color: #ea3812;
+}
+@media (max-width: 992px) {
+  #wrapper-navbar .top-header-holder .container .social-media-holder,
+#wrapper-navbar .top-header-holder .container .social-media-holder-tablet {
+    display: none;
+  }
+}
+#wrapper-navbar .top-header-holder .container .social-media-holder.social-media-holder-tablet,
+#wrapper-navbar .top-header-holder .container .social-media-holder-tablet.social-media-holder-tablet {
+  display: none;
+}
+@media (max-width: 992px) {
+  #wrapper-navbar .top-header-holder .container .social-media-holder.social-media-holder-tablet,
+#wrapper-navbar .top-header-holder .container .social-media-holder-tablet.social-media-holder-tablet {
+    display: inline-block;
+    font-size: 18px;
+  }
+}
+@media (max-width: 768px) {
+  #wrapper-navbar .top-header-holder .container .social-media-holder.social-media-holder-tablet,
+#wrapper-navbar .top-header-holder .container .social-media-holder-tablet.social-media-holder-tablet {
+    display: none;
+  }
+}
+#wrapper-navbar .top-header-holder .container .contact-holder {
+  font-size: 18px;
+  font-weight: 600;
+}
+@media (max-width: 768px) {
+  #wrapper-navbar .top-header-holder .container .contact-holder {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+#wrapper-navbar .top-header-holder .container .contact-holder a {
+  text-decoration: none;
+  display: inline-block;
+  margin-right: 1em;
+  margin-bottom: 1em;
+  color: #223a47;
+}
+@media (max-width: 992px) {
+  #wrapper-navbar .top-header-holder .container .contact-holder a {
+    margin-right: 0.5em;
+    margin-bottom: 0.5em;
+  }
+}
+@media (max-width: 768px) {
+  #wrapper-navbar .top-header-holder .container .contact-holder a {
+    margin-right: 0em;
+    margin-bottom: 0em;
+  }
+}
+#wrapper-navbar .top-header-holder .container .contact-holder a .fa {
+  color: #f27257;
+}
+@media (max-width: 992px) {
+  #wrapper-navbar .top-header-holder .container .contact-holder {
+    font-size: 16px;
+  }
+  #wrapper-navbar .top-header-holder .container .contact-holder .address {
+    display: none;
+  }
+}
+@media (max-width: 768px) {
+  #wrapper-navbar .top-header-holder .container .contact-holder {
+    font-size: 18px;
+  }
+}
+#wrapper-navbar .top-header-holder .container .reservation-btn {
+  font-family: "Fredericka the Great";
+  font-size: 38px;
+  border: 1px dotted #f27257;
+  display: inline-block;
+  padding: 0.25em 0.5em;
+  border-radius: 0.25em;
+  transition: 0.25s ease all;
+  cursor: pointer;
+  text-decoration: none;
+}
+#wrapper-navbar .top-header-holder .container .reservation-btn:hover {
+  background: #f27257;
+  color: white;
+}
+@media (max-width: 992px) {
+  #wrapper-navbar .top-header-holder .container .reservation-btn {
+    font-size: 18px;
+  }
+}
+@media (max-width: 768px) {
+  #wrapper-navbar .top-header-holder .container .reservation-btn {
+    display: none;
+  }
+  #wrapper-navbar .top-header-holder .container .reservation-btn.mobile {
+    display: block;
+    margin-top: 15px;
+  }
 }
 #wrapper-navbar #main-nav {
   border-top: 1px solid rgba(93, 160, 170, 0.5);
@@ -15621,7 +15876,13 @@ body {
   font-weight: 500;
   font-size: 22px;
   text-transform: uppercase;
-  padding: 0.5em 1em;
+  padding: 1em 0.5em;
+}
+@media (max-width: 1440px) {
+  #wrapper-navbar #main-nav ul li a {
+    font-size: 20px;
+    padding: 1em 0.33em;
+  }
 }
 #wrapper-navbar #main-nav ul li.current_page_item a {
   color: #f27257;
@@ -15629,9 +15890,14 @@ body {
 
 .home-banner {
   height: 1080px;
-  background-color: #ccc;
   background-image: url(../img/home-banner.jpeg);
   background-size: cover;
+  background-position: top center;
+}
+@media (max-width: 992px) {
+  .home-banner {
+    background-position: top -350px center;
+  }
 }
 
 .has-blue-color,
